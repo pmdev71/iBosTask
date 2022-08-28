@@ -35,7 +35,7 @@ const PersonalInformation = () => {
             <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
               Darlene Robertson
             </Text>
-            <Text style={{fontSize: 12, fontWeight: '400', color: ' #667085'}}>
+            <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
               Senior UX Designer
             </Text>
           </View>
@@ -54,7 +54,7 @@ const PersonalInformation = () => {
             <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
               28 September, 1990
             </Text>
-            <Text style={{fontSize: 12, fontWeight: '400', color: ' #667085'}}>
+            <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
               Date of Birth
             </Text>
           </View>
@@ -78,8 +78,7 @@ const PersonalInformation = () => {
               <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
                 Female
               </Text>
-              <Text
-                style={{fontSize: 12, fontWeight: '400', color: ' #667085'}}>
+              <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
                 Gender
               </Text>
             </View>
@@ -98,8 +97,7 @@ const PersonalInformation = () => {
               <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
                 Islam
               </Text>
-              <Text
-                style={{fontSize: 12, fontWeight: '400', color: ' #667085'}}>
+              <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
                 Religion
               </Text>
             </View>
@@ -114,7 +112,7 @@ export default PersonalInformation;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'white',
+    backgroundColor: 'red',
     paddingHorizontal: 16,
     paddingTop: 22,
     paddingBottom: 16,
