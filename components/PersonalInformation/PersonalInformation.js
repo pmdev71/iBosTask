@@ -8,7 +8,7 @@ const PersonalInformation = () => {
         <View style={styles.profileHeaderLeft}>
           <Image
             style={styles.profileImage}
-            source={require('../../assets/images/Rectangle356.png')}
+            source={require('../../assets/images/Avatar.png')}
           />
           <View>
             <Text style={styles.nameText}>Darlene Robertson</Text>
@@ -21,69 +21,50 @@ const PersonalInformation = () => {
           <Text style={styles.activityText}>Active</Text>
         </View>
       </View>
-      {/* 1 */}
-      <View style={{borderTopColor: '#F2F2F7', borderTopWidth: 1}}></View>
-      {/* 2nd part */}
-      <View style={{paddingHorizontal: 16}}>
-        <View
-          style={{display: 'flex', flexDirection: 'row', marginVertical: 8}}>
-          <Image
-            style={styles.smallIcons}
-            source={require('../../assets/icons/Vector1.png')}
-          />
-          <View>
-            <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
-              Darlene Robertson
-            </Text>
-            <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
-              Senior UX Designer
-            </Text>
-          </View>
+
+      <View style={styles.horizontalDivider}></View>
+
+      {/* Bottom start */}
+      <View style={styles.itemContainer}>
+        <Image
+          style={styles.smallIcon}
+          source={require('../../assets/icons/Department.png')}
+        />
+        <View>
+          <Text style={styles.titleText}>Human Resource</Text>
+          <Text style={styles.smallText}>Department</Text>
         </View>
       </View>
-      {/* 2 */}
-      <View style={{borderTopColor: '#F2F2F7', borderTopWidth: 1}}></View>
-      <View style={{paddingHorizontal: 16}}>
-        <View
-          style={{display: 'flex', flexDirection: 'row', marginVertical: 8}}>
-          <Image
-            style={styles.smallIcons}
-            source={require('../../assets/icons/Vector2.png')}
-          />
-          <View>
-            <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
-              28 September, 1990
-            </Text>
-            <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
-              Date of Birth
-            </Text>
-          </View>
+
+      <View style={styles.horizontalDivider}></View>
+      <View style={styles.itemContainer}>
+        <Image
+          style={styles.smallIcon}
+          source={require('../../assets/icons/Dob.png')}
+        />
+        <View>
+          <Text style={styles.titleText}>28 September, 1990</Text>
+          <Text style={styles.smallText}>Date of Birth</Text>
         </View>
       </View>
-      {/* 3 */}
-      <View style={{borderTopColor: '#F2F2F7', borderTopWidth: 1}}></View>
+
+      <View style={styles.horizontalDivider}></View>
       <View
         style={{
           display: 'flex',
           flexDirection: 'row',
         }}>
-        <View style={{paddingHorizontal: 16}}>
-          <View
-            style={{display: 'flex', flexDirection: 'row', marginVertical: 8}}>
-            <Image
-              style={styles.smallIcons}
-              source={require('../../assets/icons/Vector3.png')}
-            />
-            <View>
-              <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
-                Female
-              </Text>
-              <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
-                Gender
-              </Text>
-            </View>
+        <View style={styles.itemContainer}>
+          <Image
+            style={styles.smallIcon}
+            source={require('../../assets/icons/Gender.png')}
+          />
+          <View>
+            <Text style={styles.titleText}>Female</Text>
+            <Text style={styles.smallText}>Gender</Text>
           </View>
         </View>
+
         <View
           style={{
             borderLeftColor: '#F2F2F7',
@@ -91,15 +72,10 @@ const PersonalInformation = () => {
             marginTop: 8,
           }}></View>
         <View style={{paddingHorizontal: 16}}>
-          <View
-            style={{display: 'flex', flexDirection: 'row', marginVertical: 8}}>
+          <View style={styles.varticalDivider}>
             <View>
-              <Text style={{fontSize: 16, fontWeight: '600', color: '#344054'}}>
-                Islam
-              </Text>
-              <Text style={{fontSize: 12, fontWeight: '400', color: '#667085'}}>
-                Religion
-              </Text>
+              <Text style={styles.titleText}>Islam</Text>
+              <Text style={styles.smallText}>Religion</Text>
             </View>
           </View>
         </View>
@@ -112,7 +88,7 @@ export default PersonalInformation;
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: 'red',
+    backgroundColor: '#FFFFFF',
     paddingHorizontal: 16,
     paddingTop: 22,
     paddingBottom: 16,
@@ -156,10 +132,35 @@ const styles = StyleSheet.create({
     backgroundColor: '#E6F9E9',
     borderRadius: 99,
   },
-  smallIcons: {
+  itemContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginVertical: 8,
+    paddingHorizontal: 16,
+  },
+  smallIcon: {
     height: 20,
     width: 20,
     marginTop: 6,
     marginRight: 19,
+  },
+  titleText: {
+    fontSize: 16,
+    fontWeight: '600',
+    color: '#344054',
+  },
+  smallText: {
+    fontSize: 12,
+    fontWeight: '400',
+    color: '#667085',
+  },
+  horizontalDivider: {
+    borderTopColor: '#F2F2F7',
+    borderTopWidth: 1,
+  },
+  varticalDivider: {
+    display: 'flex',
+    flexDirection: 'row',
+    marginVertical: 8,
   },
 });

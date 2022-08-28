@@ -8,7 +8,7 @@ const AppBar = () => {
       <View style={styles.appBarcontent}>
         <Image
           style={styles.icon}
-          source={require('../../assets/icons/Vector.png')}
+          source={require('../../assets/icons/Menu.png')}
         />
 
         <Text style={styles.text}>Employee Profile</Text>

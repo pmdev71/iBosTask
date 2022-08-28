@@ -4,37 +4,37 @@ const applications = [
   {
     id: 1,
     title: 'Leave',
-    icon: require('./../../assets/icons/Vector4.png'),
+    icon: require('./../../assets/icons/Leave.png'),
     color: '#D444F1',
   },
   {
     id: 2,
     title: 'Movements',
-    icon: require('./../../assets/icons/Vector5.png'),
+    icon: require('./../../assets/icons/Movements.png'),
     color: '#2E90FA',
   },
   {
     id: 3,
     title: 'Remote Attendance',
-    icon: require('./../../assets/icons/Vector6.png'),
+    icon: require('./../../assets/icons/Attendance.png'),
     color: '#F63D68',
   },
   {
     id: 4,
     title: 'IOU',
-    icon: require('./../../assets/icons/Vector7.png'),
+    icon: require('./../../assets/icons/IOU.png'),
     color: '#F79009',
   },
   {
     id: 5,
     title: 'Loan',
-    icon: require('./../../assets/icons/Vector8.png'),
+    icon: require('./../../assets/icons/Loan.png'),
     color: '#669F2A',
   },
   {
     id: 6,
     title: 'Overtime',
-    icon: require('./../../assets/icons/Vector9.png'),
+    icon: require('./../../assets/icons/Overtime.png'),
     color: '#875BF7',
   },
 ];
@@ -71,7 +71,9 @@ export default EmployeeApplication;
 
 const styles = StyleSheet.create({
   container: {
-    margin: 16,
+    marginTop: 8,
+    padding: 16,
+    backgroundColor: '#FFFFFF',
   },
   headerText: {
     fontSize: 18,
